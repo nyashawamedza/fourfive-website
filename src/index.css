@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap');
+
+@tailwind base; @tailwind components; @tailwind utilities;
+
+:root {
+  --radius: 0.25rem;
+  --brand-white: #FFFFFF;
+  --brand-light: #E5E5E5;
+  --brand-grey: #A0A0A0;
+  --brand-dark: #4A4A4A;
+  --brand-black: #1A1A1A;
+}
+
+html.dark { color-scheme: dark; }
+
+body {
+  background: var(--brand-light);
+  color: var(--brand-black);
+  font-family: 'Courier Prime', monospace;
+}
+
+html.dark body {
+  background: var(--brand-dark);
+  color: var(--brand-white);
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-6;
+}
+
+.typewriter-heading {
+  font-family: 'Special Elite', cursive;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.vintage-paper {
+  background: var(--brand-white);
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.03);
+}
