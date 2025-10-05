@@ -1,4 +1,4 @@
-:{$PORT:3000}
+:{$PORT}
 
 root * dist
 file_server
