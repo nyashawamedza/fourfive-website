@@ -1,2 +1,3 @@
 #!/bin/bash
-serve -s dist -l $PORT
+echo "PORT environment variable: $PORT"
+serve -s dist -l tcp://0.0.0.0:$PORT
