@@ -2,13 +2,13 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import HeroCarousel from '@/components/HeroCarousel'
-import { DESIGNS } from '@/lib/data'
+import { DESIGNS, HERO_SLIDES } from '@/lib/data'
 import DesignCard from '@/components/DesignCard'
 import { motion } from 'framer-motion'
 
 export default function Home() {
-  // Featured designs for carousel (first 6)
-  const featuredDesigns = DESIGNS.slice(0, 6)
+  // Use hero slides for carousel
+  const featuredDesigns = HERO_SLIDES
 
   // Remaining designs for grid
   const gridDesigns = DESIGNS.filter(d => !d.hideInGrid)

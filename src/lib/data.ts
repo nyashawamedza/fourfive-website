@@ -1,3 +1,30 @@
+export const HERO_SLIDES = [
+  {
+    "id": "hero-1",
+    "title": "fourFIVE Collection",
+    "collection": "Culture",
+    "type": "T-Shirt",
+    "colors": ["#000000", "#ffffff"],
+    "price": 27,
+    "tags": ["culture", "fourFIVE"],
+    "theme": "We Are Culture",
+    "image": "/hero-1.png",
+    "hideInGrid": true
+  },
+  {
+    "id": "hero-2",
+    "title": "fourFIVE Premium",
+    "collection": "Culture",
+    "type": "T-Shirt",
+    "colors": ["#000000", "#ffffff"],
+    "price": 25,
+    "tags": ["culture", "fourFIVE"],
+    "theme": "We Are Culture",
+    "image": "/hero-2.png",
+    "hideInGrid": true
+  }
+] as const;
+
 export const DESIGNS = [
   {
     "id": "ffc-001",
@@ -185,4 +212,6 @@ export const DESIGNS = [
     "hideInGrid": false
   }
 ] as const;
+
 export type Design = typeof DESIGNS[number];
+export type HeroSlide = typeof HERO_SLIDES[number];

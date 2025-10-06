@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import type { Design } from '@/lib/data'
+import type { Design, HeroSlide } from '@/lib/data'
 
 interface HeroCarouselProps {
-  designs: readonly Design[]
+  designs: readonly (Design | HeroSlide)[]
 }
 
 export default function HeroCarousel({ designs }: HeroCarouselProps) {
