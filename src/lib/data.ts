@@ -8,7 +8,7 @@ export const HERO_SLIDES = [
     "price": 27,
     "tags": ["culture", "fourFIVE"],
     "theme": "We Are Culture",
-    "image": "/hero-1.png",
+    "image": "/hero-1.webp",
     "hideInGrid": true
   },
   {
@@ -20,7 +20,7 @@ export const HERO_SLIDES = [
     "price": 25,
     "tags": ["culture", "fourFIVE"],
     "theme": "We Are Culture",
-    "image": "/hero-2.png",
+    "image": "/hero-2.webp",
     "hideInGrid": true
   }
 ] as const;
