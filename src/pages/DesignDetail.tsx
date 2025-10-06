@@ -25,7 +25,7 @@ export default function DesignDetail() {
       <Header />
       <section className="container py-8 grid md:grid-cols-2 gap-8">
         <div className="rounded-2xl overflow-hidden bg-zinc-100">
-          <img src={d.image} alt={d.title} className="w-full h-full object-cover" />
+          <img src={d.image} alt={d.title} className="w-full h-full object-cover" loading="lazy" decoding="async" />
         </div>
         <div>
           <Link to="/collections" className="text-sm underline text-zinc-500">← Back to collections</Link>

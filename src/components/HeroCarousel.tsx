@@ -118,6 +118,8 @@ export default function HeroCarousel({ designs }: HeroCarouselProps) {
                   src={currentDesign.image}
                   alt={currentDesign.title}
                   className="w-full h-full object-contain"
+                  loading="lazy"
+                  decoding="async"
                 />
               </motion.div>
             </AnimatePresence>

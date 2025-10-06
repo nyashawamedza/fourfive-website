@@ -35,6 +35,8 @@ export default function DesignCard({ d }: { d: Design }) {
                   src={d.image}
                   alt={d.title}
                   className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
 
@@ -72,6 +74,8 @@ export default function DesignCard({ d }: { d: Design }) {
                   src={d.image}
                   alt={d.title}
                   className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
 
@@ -140,6 +144,8 @@ export default function DesignCard({ d }: { d: Design }) {
                           src={view.image}
                           alt={`${d.title} - ${view.label}`}
                           className="w-full h-auto object-cover"
+                          loading="lazy"
+                          decoding="async"
                         />
                       </div>
                     </div>
